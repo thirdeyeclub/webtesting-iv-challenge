@@ -1,9 +1,11 @@
 {
-	"name": "testingserver",
+	"name": "test_four",
 	"version": "1.0.0",
 	"description": "Server Testing Project",
 	"main": "server.js",
 	"scripts": {
+		"server": "nodemon",
+		"start": "node index.js",
 		"test": "jest --watch --verbose"
 	},
 	"jest": {
@@ -22,9 +24,19 @@
 	"homepage": "https://github.com/LambdaSchool/Server-Testing#readme",
 	"devDependencies": {
 		"jest": "^23.6.0",
+		"nodemon": "^1.18.11",
 		"supertest": "^3.3.0"
 	},
 	"dependencies": {
-		"express": "^4.16.4"
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.5",
+		"dotenv": "^7.0.0",
+		"express": "^4.16.4",
+		"faker": "^4.1.0",
+		"helmet": "^3.16.0",
+		"jsonwebtoken": "^8.5.1",
+		"knex": "^0.16.3",
+		"momentjs": "^2.0.0",
+		"sqlite3": "^4.0.6"
 	}
 }
