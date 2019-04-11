@@ -10,8 +10,10 @@ server.use(cors());
 server.use(helmet());
 server.use(express.json());
 
+var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+
 server.get('/', (req, res) => {
-  res.send('API ONLINE');
+  res.send(`${utc}`);
 });
 
 server.use('/api/users', usersRouter);

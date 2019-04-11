@@ -4,6 +4,8 @@
 	"description": "Server Testing Project",
 	"main": "server.js",
 	"scripts": {
+		"server": "nodemon",
+		"start": "node index.js",
 		"test": "jest --watch --verbose"
 	},
 	"jest": {
